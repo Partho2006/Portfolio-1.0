@@ -1,11 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ChevronDown, Github, Linkedin, Twitter, Mail } from 'lucide-react';
+import { ChevronDown, Github, Linkedin, Twitter, Mail, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import Skills from '@/components/Skills';
 
 export default function Hero() {
   const scrollToSection = (sectionId) => {
-    document.getElementById(sectionId)?.scrollIntoView({ 
+    document.getElementById(sectionId)?.scrollIntoView({
       behavior: 'smooth',
       block: 'start'
     });
@@ -21,13 +22,14 @@ export default function Hero() {
   return (
     <section className="min-h-screen flex items-center justify-center relative z-10 px-6 pt-24">
       <div className="max-w-4xl mx-auto text-center">
+        {/* Profile + Intro */}
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
           className="mb-8"
         >
-          <img 
+          <img
             src="/Screenshot (187).png"
             alt="P.R.C"
             className="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover mx-auto mb-6 border-4 border-white/10 shadow-2xl shadow-amber-500/10"
@@ -44,8 +46,22 @@ export default function Hero() {
             1st Year student.
             Currently exploring the intersection of AI and modern web design.
           </p>
+
+          {/* ✅ Skills Badge Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+            className="gap-2  ">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 backdrop-blur-sm border border-white/10 hover:border-white transition-colors duration-300">
+              <Sparkles className="w-4 h-4 text-amber-400" />
+              <span className="text-sm text-white/60 hover:text-white transition-colors duration-300">Skill's</span>
+            </div>
+            <Skills />
+          </motion.div>
         </motion.div>
 
+        {/* Social Links */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -67,7 +83,8 @@ export default function Hero() {
             </motion.a>
           ))}
         </motion.div>
-        
+
+        {/* Scroll Down */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

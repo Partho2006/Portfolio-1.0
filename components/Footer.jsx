@@ -51,7 +51,7 @@ export default function Footer() {
           <div className="border-t border-white/10 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
               <p className="text-slate-400 text-sm">
-                © 2024 P. R Chowdhury. All rights reserved.
+                © 2025 P. R Chowdhury. All rights reserved.
               </p>
               
               <div className="flex items-center gap-1 text-slate-400 text-sm">
