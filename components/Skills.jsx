@@ -23,17 +23,6 @@ const reviews = [
         img: "https://raw.githubusercontent.com/github/explore/main/topics/tailwind/tailwind.png",
     },
     {
-        name: "JavaScript",
-        username: "@javascript",
-        img: "https://raw.githubusercontent.com/github/explore/main/topics/javascript/javascript.png",
-    },
-    {
-        name: "Clerk",
-        username: "@clerk",
-        body: "Authentication and user management made easy. Drop-in auth, sign-in, sign-up, and profile management for your apps.",
-        img: "https://avatars.githubusercontent.com/u/66326066?s=200&v=4",
-    },
-    {
         name: "Framer Motion",
         username: "@framer",
         img: "https://raw.githubusercontent.com/github/explore/main/topics/framer-motion/framer-motion.png",
@@ -49,21 +38,10 @@ const reviews = [
         img: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
     },
     {
-        name: "Figma",
-        username: "@figma",
-        img: "https://raw.githubusercontent.com/github/explore/main/topics/figma/figma.png",
-    },
-    {
         name: "ShadCN UI",
         username: "@shadcn",
         img: "https://avatars.githubusercontent.com/u/139895814?s=200&v=4", // official shadcn avatar
     },
-    {
-        name: "Postman",
-        username: "@postman",
-        img: "https://seeklogo.com/images/P/postman-logo-F43375A2EB-seeklogo.com.png",
-    }
-
 ];
 
 const ReviewCard = ({ img, name, username }) => {
@@ -75,7 +53,7 @@ const ReviewCard = ({ img, name, username }) => {
                 "border border-white/20 bg-transparent backdrop-blur-md",
                 "dark:border-white/10 dark:bg-transparent",
                 // ✨ Glow effect
-                "hover:scale-105 hover:border-white hover:shadow-[0_0_15px_rgba(255,255,255,0.3)] duration-300"
+                "hover:scale-105 border-white shadow-[0_0_15px_rgba(255,255,255,0.3)] duration-300"
             )}
         >
             <img
