@@ -5,10 +5,10 @@ import { Heart, Github, Linkedin, Twitter, Mail } from 'lucide-react';
 
 export default function Footer() {
   const socialLinks = [
-    { icon: Github, href: "#", label: "GitHub" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Mail, href: "#", label: "Email" }
+    { icon: Github, href: "https://github.com/Partho2006", label: "GitHub" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/parthojoty-roy-chowdhury-562a71371/", label: "LinkedIn" },
+    { icon: Twitter, href: "https://x.com/partho221/", label: "Twitter" },
+    { icon: Mail, href: "mailto:parthojotyroychowdhury@gmail.com", label: "Email" }
   ];
 
   const scrollToTop = () => {
@@ -53,7 +53,7 @@ export default function Footer() {
               <p className="text-slate-400 text-sm">
                 © 2025 P. R Chowdhury. All rights reserved.
               </p>
-              
+
               <div className="flex items-center gap-1 text-slate-400 text-sm">
                 <span>Made with</span>
                 <Heart className="w-4 h-4 text-red-400 fill-current" />

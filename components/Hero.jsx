@@ -13,7 +13,7 @@ export default function Hero() {
   };
 
   const socialLinks = [
-    { icon: Github, href: "https://github.com/Partho2006?tab=repositories", label: "GitHub" },
+    { icon: Github, href: "https://github.com/Partho2006", label: "GitHub" },
     { icon: Linkedin, href: "https://www.linkedin.com/in/parthojoty-roy-chowdhury-562a71371/", label: "LinkedIn" },
     { icon: Twitter, href: "https://x.com/partho221/", label: "Twitter" },
     { icon: Mail, href: "mailto:parthojotyroychowdhury@gmail.com", label: "Email" }
