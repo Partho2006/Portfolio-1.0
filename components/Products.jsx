@@ -12,10 +12,20 @@ const projects = [
     title: "E-Commerce Platform",
     description: "A modern, responsive e-commerce solution with advanced filtering and seamless checkout experience.",
     image: "/Screenshot (188).png",
-    tags: ["Next.js", "Node.js", "ShadCn", "Clerk"],
+    tags: ["Next.js", "Node.js", "TailwindCSS", "ShadCn", "Clerk"],
     live: "https://shop-y-git-main-partho221s-projects.vercel.app/",
     github: "https://github.com/Partho2006/ShopY",
     category: "web"
+  },
+  {
+    id: 3,
+    title: "UBservices",
+    description: "A service management platform built with modern web technologies, offering user authentication, clean UI, and responsive layouts.",
+    image: "/Screenshot (226).png",
+    tags: ["Next.js", "Framer Motion", "TailwindCSS", "Clerk", "ShadCn"],
+    live: "https://ubservices-15foik4qu-partho221s-projects.vercel.app/",
+    github: "https://github.com/Partho2006/ubservices",
+    category: "design"
   },
 ];
 
