@@ -18,7 +18,7 @@ const projects = [
     category: "web"
   },
   {
-    id: 3,
+    id: 2,
     title: "UBservices",
     description: "A service management platform built with modern web technologies, offering user authentication, clean UI, and responsive layouts.",
     image: "/Screenshot (226).png",
@@ -26,6 +26,16 @@ const projects = [
     live: "https://ubservices-15foik4qu-partho221s-projects.vercel.app/",
     github: "https://github.com/Partho2006/ubservices",
     category: "design"
+  },
+  {
+    id: 3,
+    title: "Quick.ai",
+    description: "An all-in-one AI SaaS platform that helps you create and edit content effortlessly.",
+    image: "/Screenshot (262).png",
+    tags: ["React.js", "Node.js", "TailwindCSS", "Clerk", "Cloudinary"],
+    live: "https://quick-ai-tau-nine.vercel.app/",
+    github: "https://github.com/Partho2006/quick",
+    category: "web"
   },
 ];
 
@@ -39,8 +49,6 @@ export default function Products() {
 
   const filters = [
     { key: 'all', label: 'All Projects' },
-    { key: 'web', label: 'Web Development' },
-    { key: 'design', label: 'Design' }
   ];
 
   return (
